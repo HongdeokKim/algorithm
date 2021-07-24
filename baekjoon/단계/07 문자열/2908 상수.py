@@ -1,3 +1,4 @@
+'''
 A, B = list(map(str, input().split()))
 
 A = list(A)
@@ -10,3 +11,13 @@ if  A > B:
     print(A)
 else:
     print(B)
+'''
+
+a, b =input().split()
+
+def reading(k):
+    k = k[::-1]
+    print(k)
+    return int(k)
+
+print(max([reading(a),reading(b)]))
