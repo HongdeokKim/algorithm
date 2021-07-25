@@ -1,7 +1,8 @@
-A, B, C = list(map(int, input().split()))
-r = round(A / (C - B)) + 1
+# 뽑아내는건 list 안써도 됨
 
-if r >= 1:
-    print(r)
-else:
+A, B, C = map(int, input().split())
+
+if B >= C:
     print(-1)
+else:
+    print(A // (C - B) + 1)
