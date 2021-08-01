@@ -13,7 +13,7 @@ for i in range(2, int(M**(1/2)) + 1):
     if s[i]:
         for j in range(2*i, M, i):
             s[j] = False
-            
+
 for i in l:
     if i == 1:
         print(1)
@@ -23,3 +23,7 @@ for i in l:
             if s[j] == True:
                 cnt += 1
         print(cnt)
+
+# 더 깊은 알고리즘 방식을 알아야함
+# 780ms -> 88ms
+# 홀수만 찾기, 이진 분할 알고리즘..?
