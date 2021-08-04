@@ -5,7 +5,8 @@ for _ in range(T):
     n = int(input())
 
     l = [[i for i in range(1, n+1)]]
-    print(l)
+
     for i in range(1, k):
         l.append([sum(l[j][:j]) for j in range(1, n)])
+    print(l)
     
