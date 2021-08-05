@@ -1,14 +1,10 @@
 T = int(input())
-l = []
 
 for _ in range(T):
     H, W, N = map(int, input().split())
-    temp = (N // H) + 1
-
-    if temp < 10:
-        l.append(str(N % H) + "0" + str(temp))
+    
+    if N & H == 0:
+        print((N % H) * 100 + H)
     else:
-        l.append(str(N % H) + str(temp))
-   
-print("\n".join(l))
+        print((N % H) * 100 + (N // H) + 1)
 
