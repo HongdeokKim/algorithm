@@ -8,7 +8,7 @@
 # table = [[False] * M] * N
 
 
-# for i in range(N):
+# for i in range(N):w
 #     for j in range(M):
 #         table[N][M] = True
 
@@ -32,7 +32,7 @@ def dfs(x, y):
         dfs(x, y - 1)
         dfs(x + 1, y)
         dfs(x, y + 1)
-        return True
+        return True # 전부 확인하고 닫기
     return False
 
 result = 0
@@ -42,3 +42,4 @@ for i in range(N):
             result += 1
 print(result)
 
+# 배울점이 많은 코드
