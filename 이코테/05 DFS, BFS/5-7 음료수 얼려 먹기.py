@@ -26,7 +26,7 @@ def dfs(x, y):
         return False
 
     if graph[x][y] == 0:
-        graph[x][y] == 1
+        graph[x][y] = 1 # 잘 치자
 
         dfs(x - 1, y)
         dfs(x, y - 1)
