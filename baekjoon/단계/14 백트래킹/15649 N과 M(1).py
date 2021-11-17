@@ -1,6 +1,6 @@
 from sys import stdin
-
 input = stdin.readline
+
 N, M = map(int, input().split())
 
 arr = list(range(1, N + 1))
@@ -12,6 +12,7 @@ out = []  # 출력 내용
 
 def solve(depth, N, M):
     if depth == M:  # 탈출 조건
+        print(out)
         print(' '.join(map(str, out)))  # list를 str으로 합쳐 출력
         return
     for i in range(len(visited)):  # 탐사 check 하면서
