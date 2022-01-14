@@ -24,3 +24,5 @@ def solve(depth, N, M):
             out.pop()  # 탐사 내용 제거
 
 solve(0, N, M)
+
+# 추가 공부
