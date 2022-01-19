@@ -10,12 +10,8 @@ for _ in range(T):
     print(l)
     for _ in range(K):
         x, y = map(int, input().split())
-        l[y][x] = 1
-
-    for i in range(N):
-        for j in range(M):
-            print(l[j][i], end=" ")
-        print()
+        l[x][y] = 1
+    print(l)
 
 
 # def find():
