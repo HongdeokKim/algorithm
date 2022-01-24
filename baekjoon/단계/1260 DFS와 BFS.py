@@ -14,6 +14,15 @@ def BFS(graph, v, visited):
     visited = [False] * (N + 1)
     queue = deque([v])
 
+    while queue:
+        v = queue.popleft()
+        print(v, end=' ')
+
+        for i in graph[v]:
+            if not visited[i]:
+                queue.append(i)
+                visited[i] = True
+
 N, M, V = map(int, input().split())
 graph = []
 for _ in range(N + 1):
@@ -25,9 +34,7 @@ for _ in range(M):
     graph[v1].append(v2)
     graph[v2].append(v1)
 
+
 DFS(graph, 1, visited)
-
-
-
-
-# def BFS():
+print()
+BFS(graph, 1, visited)
