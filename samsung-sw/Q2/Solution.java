@@ -27,6 +27,7 @@ class Solution {
 		for (int i = 0; i < q; ++i) {
 			StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 			cmd = Integer.parseInt(st.nextToken());
+
 			switch (cmd) {
 				case CMD_INIT:
 					usersolution.init();
@@ -72,6 +73,12 @@ class Solution {
 					okay = false;
 					break;
 			}
+			///
+			if(okay == false) {
+				System.out.println("Here!");
+				System.exit(0);
+			}
+			///
 		}
 		return okay;
 	}
@@ -95,3 +102,4 @@ class Solution {
 		br.close();
 	}
 }
+
