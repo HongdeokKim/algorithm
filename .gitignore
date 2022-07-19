@@ -1,3 +1,12 @@
 workspace.code-workspace
 .DS_Store
 .idea
+
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
