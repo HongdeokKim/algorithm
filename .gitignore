@@ -10,3 +10,6 @@ workspace.code-workspace
 
 # Unignore all dirs
 !*/
+
+# a.out
+a.out
